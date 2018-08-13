@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="address">
+        <field name="postcode" component="Magento_Ui/js/form/element/post-code" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string" translate="true">CEP</item>
+                    <item name="source" xsi:type="string">address</item>
+                    <item name="inputMask" xsi:type="array">
+                        <item name="mask" xsi:type="string">00000-000</item>
+                    </item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <placeholder>00000-000</placeholder>
+            </settings>
+        </field>
+        <field name="telephone" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">address</item>
+                    <item name="inputMask" xsi:type="array">
+                        <item name="mask" xsi:type="string">(00) 00000-0000</item>
+                    </item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <placeholder>(00) 00000-0000</placeholder>
+            </settings>
+        </field>
+        <field name="fax" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">address</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="min_text_length" xsi:type="number">0</rule>
+                </validation>
+                <dataType>text</dataType>
+            </settings>
+        </field>
+    </fieldset>
+</form>

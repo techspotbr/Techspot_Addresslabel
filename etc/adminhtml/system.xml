@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * O Módulo Tech Spot - BRCustomer para Magento 2 habilita o cadastro de clientes PF (Pessoa Física) e PJ(Pessoa Jurídica) no cadastro do cliente da sua aplicação Magento.
+ * Copyright (C) 2017  Tech Spot 
+ * 
+ * This file is part of Techspot/Brcustomer.
+ * 
+ * Techspot/Brcustomer is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="customer">
+            <group id="address" translate="label" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="street_address1_label" translate="label comment" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street Address Line 1 Label</label>
+                </field>
+                <field id="street_address1_input" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street Address Line 1 is required?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Magento\Customer\Model\Config\Backend\Address\Street</backend_model>
+                </field>
+                <field id="street_address2_label" translate="label comment" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street Address Line 2 Label</label>
+                </field>
+                <field id="street_address2_input" translate="label" type="select" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street Address Line 2 is required?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Magento\Customer\Model\Config\Backend\Address\Street</backend_model>
+                </field>
+                <field id="street_address3_label" translate="label comment" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street Address Line 3 Label</label>
+                </field>
+                <field id="street_address3_input" translate="label" type="select" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street Address Line 3 is required?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Magento\Customer\Model\Config\Backend\Address\Street</backend_model>
+                </field>
+                <field id="street_address4_label" translate="label comment" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street Address Line 4 Label</label>
+                </field>
+                <field id="street_address4_input" translate="label" type="select" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street Address Line 4 is required?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Magento\Customer\Model\Config\Backend\Address\Street</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

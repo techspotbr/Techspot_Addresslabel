@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * The Tech Spot Address Label Module for Magento 2 enables input custom label for customer street address lines
+ * Copyright (C) 2018  Tech Spot 
+ * 
+ * This file is part of Techspot/Addresslabel.
+ * 
+ * Techspot/Addresslabel is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+	<module name="Techspot_Addresslabel" setup_version="1.0.1">
+		<sequence>
+            <module name="Magento_Checkout"/>
+            <module name="Magento_Customer"/>
+            <module name="Magento_CustomerCustomAttributes"/>
+        </sequence>
+	</module>
+</config>
