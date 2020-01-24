@@ -31,8 +31,7 @@
                 <argument name="is_highlighted" xsi:type="boolean">true</argument>
             </arguments>
         </referenceBlock>
-        <referenceContainer name="content">
-            <uiComponent name="customer_form"/>
+        <referenceContainer name="content">            
             <block class="Magento\Customer\Block\Address\Edit" name="customer_address_edit" template="Techspot_Addresslabel::address/edit.phtml" cacheable="false"/>
         </referenceContainer>
     </body>
